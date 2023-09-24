@@ -111,12 +111,15 @@
 						  }
 						}).then(response => {
 							console.log(response)
-							this.token = response.data.token
-							console.log("Token:", this.token)
+							const token = response.data.token
+							localStorage.setItem("token", response.data.token)
+							// console.log("Token:", token)
 							// console.log(response.data.msg)
+							uni.navigateTo({url: "../insurance_upload_form/insurance_upload_form"})
 						}).catch(error => {
 							console.log(error)
 						})
+						
 
 			},
 			codeChange(text) {

@@ -9,8 +9,18 @@
 				"navigationBarTitleText": "会员登陆",
 				"navigationStyle": "custom"
 			}
+		},
+		{
+		    "path" : "pages/insurance_upload_form/insurance_upload_form",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
 		}
-	],
+		
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
